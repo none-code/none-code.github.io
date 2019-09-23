@@ -384,8 +384,9 @@ p{
 	color: #000
 }
 .ser-feat p{
-	font-size: 26px;
-	font-weight: 300
+	font-size: 20px;
+	font-weight: 300;
+	font-family: 'Chilanka', cursive;
 }
 
 
@@ -518,6 +519,7 @@ p{
 	width: 100%;
 	margin-bottom: 20px;
 	min-height: 100px;
+	max-height: 200px;
 }
 .contact input[type="submit"]{
 	background-color: #000;

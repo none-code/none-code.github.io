@@ -14,10 +14,12 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
 
   <title>Barber</title>
 </head>
 <body>
+
 
 
 <header>
@@ -37,7 +39,6 @@
         <span></span>
         <span></span>
     </div>  
-
   </div>
   <div class="mobile-menu">
     <ul>
@@ -66,6 +67,8 @@
           <span></span>
           <span>EST 1990</span>
         </div>
+        <div>
+        <button id="but" style="padding: 10px; background-color: transparent; border: none; font-size: 24px; color: #c29e75;" onclick="Music()"><i class="icofont-headphone-alt-1"></i></button></div>
       </div>
     </div>
     <a class="down" href="#about"><i class="fa fa-chevron-down"></i></a>
@@ -430,6 +433,7 @@
 
 
 
+<span id="on"></span>
 
 
 
@@ -442,6 +446,7 @@
 <!-- Initialize Swiper -->
 <script type="text/javascript">
 $(document).ready(function () {
+
 
 
 // Swiper
@@ -523,6 +528,21 @@ $('#hamburger').click(function() {
         {lat: -42.735258, lng: 147.438000},
         {lat: -43.999792, lng: 170.463352}
       ]
+    </script>
+    <script type="text/javascript">
+      //Music
+ function Music() {
+  var music = document.getElementById('on');
+  var but = document.getElementById('but');
+  music.innerHTML = ("<audio src='Birds.mp3' autoplay></audio>");
+  but.setAttribute( "onClick", "muzof()" );
+ }
+ function muzof() {
+  var music = document.getElementById('on');
+  var but = document.getElementById('but');
+  music.innerHTML = ("<audio src='Birds.mp3' autoplayasd></audio>");
+  but.setAttribute( "onClick", "Music()" );
+ }
     </script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
     </script>
