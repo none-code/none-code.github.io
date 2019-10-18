@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <!-- Links -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/icofont.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
+  <title></title>
+</head>
+<body>
+
+<div class="mobile-menu">
+  <ul>
+    <li id="n1"><a href="#" ><i class="fa fa-home"></i></a></li>
+    <li id="n2"><a href="#" ><i class="fa fa-book"=></i></a></li>
+    <li class="active" id="n3"><a href="#" >
+      <span class="body">
+        <span class="smile"></span>
+      </span>
+    </a></li>
+    <li id="n4"><a href="#" ><i class="fa fa-address-card-o"></i></a></li>
+    <li id="n5"><a href="#" ><i class="fa fa-search"></i></a></li>
+  </ul>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+<script type="text/javascript">
+$(document).on('click', 'ul li', function() {
+  $(this).addClass('active').siblings().removeClass('active');
+});
+$("#n1").click(function () {
+  $('.body').addClass('left-1');
+  $('.body').addClass('right-1');
+  $('.body').removeClass('left-2');
+  $('.body').removeClass('right-2');
+  $('.body').removeClass('left-3');
+  $('.body').removeClass('right-3');
+  $('.body').removeClass('left-4');
+  $('.body').removeClass('right-4');
+  $('.smile').css('left', '4px');
+  $('.body').css('background-color', '#fff');
+});
+$("#n2").click(function () {
+  $('.body').addClass('left-2');
+  $('.body').addClass('right-2');
+  $('.body').removeClass('left-1');
+  $('.body').removeClass('right-1');
+  $('.body').removeClass('left-3');
+  $('.body').removeClass('right-3');
+  $('.body').removeClass('left-4');
+  $('.body').removeClass('right-4');
+  $('.smile').css('left', '6px');
+  $('.body').css('background-color', '#fff');
+});
+$("#n3").click(function () {
+  $('.body').removeClass('left-2');
+  $('.body').removeClass('right-2');
+  $('.body').removeClass('left-1');
+  $('.body').removeClass('right-1');
+  $('.body').removeClass('left-3');
+  $('.body').removeClass('right-3');
+  $('.body').removeClass('left-4');
+  $('.body').removeClass('right-4');
+  $('.smile').css('left', '7px');
+  $('.body').css('background-color', '#3f4d7c');
+});
+$("#n4").click(function () {
+  $('.body').addClass('left-3');
+  $('.body').addClass('right-3');
+  $('.body').removeClass('left-1');
+  $('.body').removeClass('right-1');
+  $('.body').removeClass('left-4');
+  $('.body').removeClass('right-4');
+   $('.body').removeClass('left-2');
+  $('.body').removeClass('right-2');
+  $('.smile').css('left', '8px');
+  $('.body').css('background-color', '#fff');
+});
+$("#n5").click(function () {
+  $('.body').addClass('left-4');
+  $('.body').addClass('right-4');
+  $('.body').removeClass('left-1');
+  $('.body').removeClass('right-1');
+  $('.body').removeClass('left-3');
+  $('.body').removeClass('right-3');
+   $('.body').removeClass('left-2');
+  $('.body').removeClass('right-2');
+  $('.smile').css('left', '9px');
+  $('.body').css('background-color', '#fff');
+});
+</script>
+</html>

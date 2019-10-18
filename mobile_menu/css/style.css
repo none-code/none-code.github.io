@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+}
+body {
+	color: #151515;
+	background: #3F4D7C;
+	font-family: 'Merienda', cursive;
+	color: #151515;
+	font-weight: 400;
+	position: relative;
+}
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.mobile-menu{
+	position: fixed;
+	bottom: 10px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.mobile-menu ul{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 95%;
+	border-radius: 15px;
+	background-color: #1E1A2B;
+	padding: 0 20px;
+}
+.mobile-menu ul li{
+	padding: 10px 0;
+}
+.mobile-menu ul li a{
+	font-size: 20px;
+	color: #fff;
+	transition: .3s
+} 
+.mobile-menu ul li a:hover{
+	color: #227ea7;
+} 
+.mobile-menu ul li.active a{
+	color: #227ea7;
+}
+#n2.active .body:after{
+	left: 0;
+}
+.body{
+	width: 23px;
+	height: 25px;
+	background-color: #fff;
+	display: block;
+	position: relative;
+	border-radius: 9px;
+}	
+.body:after{
+	content: "";
+    width: 4px;
+    height: 7px;
+    display: block;
+    background-color: #1E1A2B;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 2px;	
+    transition: .3s
+}
+.body.left-1:after{
+	left: 3px;
+}
+.body.right-1:before{
+	right: 8px;
+}
+.body.left-2:after{
+	left: 4px;
+}
+.body.right-2:before{
+	right: 7px;
+}
+.body.left-3:after{
+	left: 6px;
+}
+.body.right-3:before{
+	right: 4px;
+}
+.body.left-4:after{
+	left: 7px;
+}
+.body.right-4:before{
+	right: 3px;
+}
+.body:before{
+	content: "";
+    width: 4px;
+    height: 7px;
+    display: block;
+    background-color: #1E1A2B;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 2px;	
+}
+.smile{
+	position: absolute;
+    left: 7px;
+    top: 17px;
+    width: 9px;
+    height: 4px;
+    background-color: #1E1A2B;
+    display: block;
+    border-radius: 2px;
+}
+
+/**=================================================
+					MEDIA
+==================================================**/
+@media screen and (max-width: 700px) {
+	
+}
+
+@media screen and (max-width: 1000px) {
+
+}
