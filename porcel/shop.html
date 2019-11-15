@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!-- Links -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/icofont.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <title>Porcel</title>
+</head>
+<body>
+
+<!-- header -->
+<header>
+  <div class="col-xs-12">
+    <div class="row">
+      <div class="main-menu">
+        <div id="hamburger" class="mobile-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="logo">
+          <span>POR</span>
+          <br>
+          <span>CEL</span>
+        </div>
+        <ul class="menu">
+          <form class="search-box" action="#" method="POST">
+            <input type="text" name="search" placeholder="Search">
+            <button type="submit"><i class="icofont-search"></i></button>
+          </form>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">Sels</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Special</a></li>
+        </ul>
+        <div class="account">
+          <a href="#">
+            <span class="user-icon"><i class="icofont-ui-user"></i></span> 
+            <span class="my-acc">My Account</span>
+          </a>
+          <a href="#">
+            <span class="count-cart">4</span>
+            <i class="icofont-cart-alt"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- shop-header -->
+<div class="shop-header">
+  <p>Shop</p>
+</div>
+
+
+
+<!-- shop -->
+<div class="container">
+  <div class="col-xs-12">
+    <div class="row">
+
+      <div class="col-md-3 col-sm-3 col-xs-12">
+        <div class="sidebar">
+
+          <form class="sidebar-search">
+            <h1 class="side-tittle">Search</h1>
+            <input type="text" name="" placeholder="Search product...">
+            <button type="submit"><i class="icofont-search"></i></button>
+          </form>
+
+          <div class="sidebar-category">
+            <h1 id="category" class="side-tittle">Category <i class="icofont-caret-down"></i></h1>
+            <ul class="category-items">
+              <li>
+                <a class="active" href="#">
+                  <span>All</span>
+                  <span>(9000)</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Dish</span>
+                  <span>7800</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Mug</span>
+                  <span>1700</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Cup</span>
+                  <span>19</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Kettle</span>
+                  <span>150</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Vase</span>
+                  <span>1980</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Bow</span>
+                  <span>100</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-brand">
+            <h1 id="brands" class="side-tittle">Brands <i class="icofont-caret-down"></i></h1>
+            <ul class="brand-items">
+              <li>
+                <a class="active" href="#">
+                  <span>Niko</span>
+                  <span>9000</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Polich</span>
+                  <span>7800</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Disnay</span>
+                  <span>1700</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Marva</span>
+                  <span>19</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Gucci</span>
+                  <span>150</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Adidasis</span>
+                  <span>1980</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Bow</span>
+                  <span>100</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+<!-- 
+          <div id="price" class="sidebar-price">
+            <h1  class="side-tittle">Price</h1>
+            <input type="range" name="">
+          </div> -->
+
+        </div>
+      </div>
+
+      <!-- col-md-9 -->
+      <div class="col-md-9 col-sm-9 col-xs-12">
+        <div class="content">
+
+          <div class="filter hidden-xs">
+            <div class="filter-grid">
+              <button class="grid-button active" onclick="gridView()"><i class="fa fa-th-large"></i></button> 
+              <button class="grid-button" onclick="listView()"><i class="fa fa-th-list"></i></i>
+            </div>
+          </div>
+
+          <div class="products-list">
+            <div class="row">
+              <div class="col-md-4 col-sm-6 col-xs-6 row-fix-pad">
+                <div class="product">
+                  <a href="#">
+                    <div class="product-img">
+                      <img src="img/product/1.png">
+                      <div class="mobile-cart">
+                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="product-nav">
+                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button><i class="icofont-cart-alt"></i></button>
+                      </div>
+                    </div>
+                    <div class="product-cap">
+                      <p class="p-name">Cup</p>
+                      <p class="p-make">Cassle Blaw / Mikka Ri</p>
+                      <p class="p-price">
+                        <span>$15.00</span>
+                        <span>$18.20</span>
+                      </p>                      
+                      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat.</p>
+                    </div>
+                  </a>
+                  <span class="discount">-20%</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-6 row-fix-pad">
+                <div class="product">
+                  <a href="#">
+                    <div class="product-img">
+                      <img src="img/product/1.png">
+                      <div class="mobile-cart">
+                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="product-nav">
+                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button><i class="icofont-cart-alt"></i></button>
+                      </div>
+                    </div>
+                    <div class="product-cap">
+                      <p class="p-name">Cup</p>
+                      <p class="p-make">Cassle Blaw / Mikka Ri</p>
+                      <p class="p-price">
+                        <span>$15.00</span>
+                        <span>$18.20</span>
+                      </p>
+                      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat.</p>
+                    </div>
+                  </a>
+                  <span class="discount">-20%</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-6 row-fix-pad">
+                <div class="product">
+                  <a href="#">
+                    <div class="product-img">
+                      <img src="img/product/1.png">
+                      <div class="mobile-cart">
+                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="product-nav">
+                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button><i class="icofont-cart-alt"></i></button>
+                      </div>
+                    </div>
+                    <div class="product-cap">
+                      <p class="p-name">Cup</p>
+                      <p class="p-make">Cassle Blaw / Mikka Ri</p>
+                      <p class="p-price">
+                        <span>$15.00</span>
+                        <span>$18.20</span>
+                      </p>
+                      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat.</p>
+                    </div>
+                  </a>
+                  <span class="discount">-20%</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-6 row-fix-pad">
+                <div class="product">
+                  <a href="#">
+                    <div class="product-img">
+                      <img src="img/product/1.png">
+                      <div class="mobile-cart">
+                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="product-nav">
+                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button><i class="icofont-cart-alt"></i></button>
+                      </div>
+                    </div>
+                    <div class="product-cap">
+                      <p class="p-name">Cup</p>
+                      <p class="p-make">Cassle Blaw / Mikka Ri</p>
+                      <p class="p-price">
+                        <span>$15.00</span>
+                        <span>$18.20</span>
+                      </p>
+                      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat.</p>
+                    </div>
+                  </a>
+                  <span class="discount">-20%</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-6 row-fix-pad">
+                <div class="product">
+                  <a href="#">
+                    <div class="product-img">
+                      <img src="img/product/1.png">
+                      <div class="mobile-cart">
+                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="product-nav">
+                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button><i class="icofont-cart-alt"></i></button>
+                      </div>
+                    </div>
+                    <div class="product-cap">
+                      <p class="p-name">Cup</p>
+                      <p class="p-make">Cassle Blaw / Mikka Ri</p>
+                      <p class="p-price">
+                        <span>$15.00</span>
+                        <span>$18.20</span>
+                      </p>
+                      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat.</p>
+                    </div>
+                  </a>
+                  <span class="discount">-20%</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-6 row-fix-pad">
+                <div class="product">
+                  <a href="#">
+                    <div class="product-img">
+                      <img src="img/product/1.png">
+                      <div class="mobile-cart">
+                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="product-nav">
+                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button><i class="icofont-cart-alt"></i></button>
+                      </div>
+                    </div>
+                    <div class="product-cap">
+                      <p class="p-name">Cup</p>
+                      <p class="p-make">Cassle Blaw / Mikka Ri</p>
+                      <p class="p-price">
+                        <span>$15.00</span>
+                        <span>$18.20</span>
+                      </p>
+                      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat.</p>
+                    </div>
+                  </a>
+                  <span class="discount">-20%</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-6 row-fix-pad">
+                <div class="product">
+                  <a href="#">
+                    <div class="product-img">
+                      <img src="img/product/1.png">
+                      <div class="mobile-cart">
+                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="product-nav">
+                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button><i class="icofont-cart-alt"></i></button>
+                      </div>
+                    </div>
+                    <div class="product-cap">
+                      <p class="p-name">Cup</p>
+                      <p class="p-make">Cassle Blaw / Mikka Ri</p>
+                      <p class="p-price">
+                        <span>$15.00</span>
+                        <span>$18.20</span>
+                      </p>
+                      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat.</p>
+                    </div>
+                  </a>
+                  <span class="discount">-20%</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-6 row-fix-pad">
+                <div class="product">
+                  <a href="#">
+                    <div class="product-img">
+                      <img src="img/product/1.png">
+                      <div class="mobile-cart">
+                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="product-nav">
+                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button><i class="icofont-cart-alt"></i></button>
+                      </div>
+                    </div>
+                    <div class="product-cap">
+                      <p class="p-name">Cup</p>
+                      <p class="p-make">Cassle Blaw / Mikka Ri</p>
+                      <p class="p-price">
+                        <span>$15.00</span>
+                        <span>$18.20</span>
+                      </p>
+                      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat.</p>
+                    </div>
+                  </a>
+                  <span class="discount">-20%</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-6 row-fix-pad">
+                <div class="product">
+                  <a href="#">
+                    <div class="product-img">
+                      <img src="img/product/1.png">
+                      <div class="mobile-cart">
+                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                      </div>
+                      <div class="product-nav">
+                        <button><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button><i class="icofont-cart-alt"></i></button>
+                      </div>
+                    </div>
+                    <div class="product-cap">
+                      <p class="p-name">Cup</p>
+                      <p class="p-make">Cassle Blaw / Mikka Ri</p>
+                      <p class="p-price">
+                        <span>$15.00</span>
+                        <span>$18.20</span>
+                      </p>
+                      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat.</p>
+                    </div>
+                  </a>
+                  <span class="discount">-20%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="icofont-thin-left"></i>
+                  <span>prev</span>
+                </a>
+              </li>
+              <li><a class="active" href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                <a href="#">
+                  <span>next</span>
+                  <i class="icofont-thin-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- footer -->
+<footer>
+  <div class="container">
+    <div class="co-xs-12">
+      <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-6">
+          <ul class="footer-menu">
+            <p>Shopguide</p>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Policy privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Service</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-6">
+          <ul class="footer-menu">
+            <p>Account info</p>
+            <li><a href="#">My account</a></li>
+            <li><a href="#">My whishlist</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Sign in</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="subscribe">
+            <p>Subscribe us</p>
+            <form>
+              <input type="text" name="" placeholder="Enter your E-mail">
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/my-script.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/owl.carousel.js"></script>
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+
+//hamburger
+$('#hamburger').click(function() {
+  $('.menu').toggleClass('menu-show');
+  $('.mobile-toggle').toggleClass('active');
+});
+
+// sticky Header
+$(window).scroll(function() {
+
+  if ($(window).scrollTop() > 150) {
+    $('.main-menu').addClass('sticky');
+  } else {
+    $('.main-menu').removeClass('sticky');
+  }
+});
+
+/*sidebar*/
+$('#category').click(function() {  
+  $('#category').toggleClass('side-rot');
+
+  if (window.screen.width > 768) {
+    $('.category-items').toggleClass('hide');
+  }
+  else{
+    $('.category-items').toggleClass('show');
+  }
+});
+
+$('#brands').click(function() {
+  $('#brands').toggleClass('side-rot');
+  
+  if (window.screen.width > 768) {
+    $('.brand-items').toggleClass('hide');
+  }
+  else{
+    $('.brand-items').toggleClass('show');
+  }
+});
+
+// grid
+$(document).on('click', '.grid-button', function() {
+  $(this).addClass('active').siblings().removeClass('active');
+});
+
+
+});
+</script>
+</html>
