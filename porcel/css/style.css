@@ -1322,10 +1322,10 @@ input[type=number]::-webkit-inner-spin-button {
 					/*DETAIL*/
 	.detail{
 		padding: 80px 0px 0 0;
-	}
+	}/*
 	.detail-img img{
 		width: 70%
-	}
+	}*/
 	.all-details{
 		padding: 0;
 	}
