@@ -534,58 +534,9 @@
 </body>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/my-script.js"></script>
+<script src="js/my-query.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/owl.carousel.js"></script>
 <!-- Swiper JS -->
 <script src="js/swiper.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-
-//hamburger
-$('#hamburger').click(function() {
-  $('.menu').toggleClass('menu-show');
-  $('.mobile-toggle').toggleClass('active');
-});
-
-// sticky Header
-$(window).scroll(function() {
-
-  if ($(window).scrollTop() > 150) {
-    $('.main-menu').addClass('sticky');
-  } else {
-    $('.main-menu').removeClass('sticky');
-  }
-});
-
-/*sidebar*/
-$('#category').click(function() {  
-  $('#category').toggleClass('side-rot');
-
-  if (window.screen.width > 768) {
-    $('.category-items').toggleClass('hide');
-  }
-  else{
-    $('.category-items').toggleClass('show');
-  }
-});
-
-$('#brands').click(function() {
-  $('#brands').toggleClass('side-rot');
-  
-  if (window.screen.width > 768) {
-    $('.brand-items').toggleClass('hide');
-  }
-  else{
-    $('.brand-items').toggleClass('show');
-  }
-});
-
-// grid
-$(document).on('click', '.grid-button', function() {
-  $(this).addClass('active').siblings().removeClass('active');
-});
-
-
-});
-</script>
 </html>

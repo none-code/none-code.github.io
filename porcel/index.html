@@ -608,24 +608,6 @@
 <script src="js/swiper.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function () {
-
-//hamburger
-$('#hamburger').click(function() {
-  $('.menu').toggleClass('menu-show');
-  $('.mobile-toggle').toggleClass('active');
-});
-
-// sticky Header
-$(window).scroll(function() {
-
-  if ($(window).scrollTop() > 150) {
-    $('.main-menu').addClass('sticky');
-  } else {
-    $('.main-menu').removeClass('sticky');
-  }
-});
-
-
 /*swiper*/
 $('#main-slider').owlCarousel({
   loop:true,
@@ -661,6 +643,31 @@ $('#slider').owlCarousel({
 
 /*product-slider-2*/
 $('#slider-2').owlCarousel({
+  margin: 30,
+  responsive : {
+    1366 : {
+      items: 4,
+    },
+    1024 : {
+      items: 4,
+    },
+    768 : {
+      items: 3,
+      margin: 20,
+    },
+    425 : {
+      items: 2,
+      margin: 20,
+    },
+    320 : {
+      items: 2,
+      margin: 5,
+    }
+  }
+});
+
+/*product-slider-2*/
+$('#slider-3').owlCarousel({
   margin: 30,
   responsive : {
     1366 : {
