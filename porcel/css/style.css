@@ -9,7 +9,6 @@ body {
 	font-weight: 400;
 	/*font-family: 'Raleway', sans-serif;*/
 	font-family: 'Open Sans', sans-serif;
-	height: 1000px;
 }
 ul{
 	padding: 0;
@@ -1075,6 +1074,130 @@ input[type=number]::-webkit-inner-spin-button {
 
 
 
+/**========================================
+///////////////////////////////////////////
+				Register
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+========================================**/
+.register{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+.reg-img{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	background: url(../img/others/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	color: #fff;
+	font-weight: 900;
+	position: relative;
+}
+.reg-img:after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #9D8189;
+	opacity: .5
+}
+.reg-content{
+	display: flex;
+	align-items: center;	
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	flex-direction: column;
+}
+.reg-content form{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	flex-direction: column;
+}
+.reg-content form input{
+	width: 60%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: none;
+	border-bottom: 1px solid #9D8189;
+	font-weight: 900
+}
+.reg-content form button{
+	width: 60%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 2px solid #9D8189;
+	background-color: transparent;
+	font-weight: 900;
+	transition: .3s
+}
+.reg-content form button:hover{
+	background-color: #9D8189;
+	color: #fff;
+}
+.reg-content a{
+	color: #9D8189;
+	margin-bottom: 10px;
+	display: block;
+	font-weight: 900
+}
+.reg-social-icons{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 50%;
+	margin-bottom: 10px;
+}
+.reg-social-icons button{
+	border: 1px solid #9D8189;
+	background-color: transparent;
+	padding: 10px;
+}
+.reg-social-icons button span{
+	font-weight: 900;
+	margin-left: 10px;
+}
+.reg-social-icons button i{
+	color: #4A548E;
+	font-size: 22px;
+}
+.reg-social-icons button:last-child i{
+	color: #C8433D;
+}
+.sign-but{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 10px;
+	color: #2A4B4F;
+	font-weight: 900
+}
+.sign-but{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 10px;
+	color: #2A4B4F;
+	font-weight: 900
+}
+.sign-but a{
+	color: #9D8189;
+	font-weight: 900;
+	margin: 0;
+	margin-left: 10px;
+}
 
 
 
@@ -1218,6 +1341,23 @@ input[type=number]::-webkit-inner-spin-button {
 		padding: 50px 0px;
 		position: relative;
 	}
+
+
+				/*SIGN IN*/
+	.reg-content form input{
+		width: 100%;
+	}
+	.reg-content form button{
+		width: 100%;
+	}
+	.reg-social-icons{
+		width: 100%
+	}
+	.reg-content{
+		padding: 10px
+	}
+
+
 }
 @media only screen and (max-width: 425px) {
 	.main-menu{
@@ -1335,4 +1475,21 @@ input[type=number]::-webkit-inner-spin-button {
 		flex-direction: column;
 		margin-top: 15px;
 	}
+
+				/*sign -in*/
+	.reg-content form input{
+		width: 100%;
+	}
+	.reg-content form button{
+		width: 100%;
+	}
+	.reg-social-icons{
+		width: 100%
+	}
+	.reg-content{
+		padding: 20px
+	}	
+	.reg-img{
+		display: none;
+	}		
 }
