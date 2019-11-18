@@ -18,6 +18,13 @@
 </head>
 <body>
 
+<!-- loader -->
+<span class="loader">
+  <div class="box">
+    <span class="loader-inner"></span>
+  </div>
+</span>
+
 <!-- header -->
 <header>
   <div class="col-xs-12">
@@ -690,6 +697,11 @@ $('#slider-3').owlCarousel({
       margin: 5,
     }
   }
+});
+
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hiddan"; // class "loader hidden"
 });
 
 });

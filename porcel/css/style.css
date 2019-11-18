@@ -51,6 +51,44 @@ img{
   margin-right: auto;
   margin-left: auto;
 }
+
+
+					/*loader*/
+.loader{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: #FFEFE8;
+	z-index: 999999;
+}
+.box {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 3px;
+  position: relative;
+  border: 4px solid #9D8189;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #2A4B4F;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+.loader.hiddan {
+  animation: fadeOute 1s;
+  animation-fill-mode: forwards;
+}
+.loader.hiddan .box{
+  display: none;
+}
 /*#2A4B4F
 #9D8189
 #E8EEEA
@@ -485,7 +523,8 @@ img{
     text-align: center;
     padding: 5px 0;
     transform: rotate(-45deg);
-    transition: .3s
+    transition: .3s;
+    font-weight: 900;
 }
 .product:hover .discount{
 	background-color: #FFEFE8;
@@ -989,6 +1028,17 @@ footer{
 	font-weight: 600;
 	letter-spacing: 1px;
 }
+.p-detail .d-like{
+	background-color: transparent;
+	border: none;
+	display: block;
+	font-weight: 900;
+	font-size: 16px;
+}
+.p-detail .d-like i{
+	margin-right: 5px;
+	font-size: 18px;
+}
 .d-price{
 	font-weight: 900;
 	font-family: 'Raleway', sans-serif;
@@ -1223,7 +1273,7 @@ input[type=number]::-webkit-inner-spin-button {
 		position: fixed;
 		top: 0;
 		border-bottom: 1px solid rgba(255,255,255,.1);
-		z-index: 99999;
+		z-index: 9;
 	}
 	.menu .search-box{
 		display: flex;
@@ -1493,3 +1543,65 @@ input[type=number]::-webkit-inner-spin-button {
 		display: none;
 	}		
 }
+
+
+
+
+/**========================================
+///////////////////////////////////////////
+				ANIMATIONS
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+========================================**/
+@keyframes fadeOute {
+	20% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+		width: 0;
+		height: 0
+	}
+}
+@keyframes loader {
+		  0% {
+		    transform: rotate(0deg);
+		  }
+		  
+		  25% {
+		    transform: rotate(180deg);
+		  }
+		  
+		  50% {
+		    transform: rotate(180deg);
+		  }
+		  
+		  75% {
+		    transform: rotate(360deg);
+		  }
+		  
+		  100% {
+		    transform: rotate(360deg);
+		  }
+		}
+
+		@keyframes loader-inner {
+		  0% {
+		    height: 0%;
+		  }
+		  
+		  25% {
+		    height: 0%;
+		  }
+		  
+		  50% {
+		    height: 100%;
+		  }
+		  
+		  75% {
+		    height: 100%;
+		  }
+		  
+		  100% {
+		    height: 0%;
+		  }
+		}
