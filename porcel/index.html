@@ -615,6 +615,13 @@
 <!-- Swiper JS -->
 <script src="js/swiper.min.js"></script>
 <script type="text/javascript">
+  
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hiddan"; // class "loader hidden"
+});
+
+
 $(document).ready(function () {
 /*swiper*/
 $('#main-slider').owlCarousel({
@@ -699,10 +706,6 @@ $('#slider-3').owlCarousel({
   }
 });
 
-window.addEventListener("load", function () {
-    const loader = document.querySelector(".loader");
-    loader.className += " hiddan"; // class "loader hidden"
-});
 
 });
 </script>
