@@ -629,6 +629,14 @@ section{
 		grid-row: 1
 	}
 
+	/*product*/
+	.product .add-cart{
+		bottom: 0;
+	}
+	.product .add-like{
+		left: 20px
+	}
+	
 
 	/*footer*/
 	.footer{
