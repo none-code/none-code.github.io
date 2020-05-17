@@ -636,6 +636,9 @@ section{
 	.product .add-like{
 		left: 20px
 	}
+	.owl-nav{
+		opacity: 1
+	}
 	
 
 	/*footer*/
